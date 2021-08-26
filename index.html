@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="chat-app">
+      <!-- chat box -->
+      <div class="box">
+        <div class="chat-box">
+          <div class="chat">
+            <div class="messages">
+              <div class="person">
+                <div class="person-info">
+                  <a class="angle-left-solid">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="angle-left"
+                      class="svg-inline--fa fa-angle-left fa-w-8"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <img
+                    class="person-image"
+                    src="./images/avatar.jpg"
+                    alt="picture a person"
+                  />
+                  <div class="name-chat">
+                    <p class="name">Samuel Green</p>
+                    <p class="name-info">Available to Walk</p>
+                  </div>
+                  <a class="tree-point-icon" href="#">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="ellipsis-v"
+                      class="svg-inline--fa fa-ellipsis-v fa-w-6"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 192 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="chat-info">
+                <p class="chat-messages left part1">
+                  That sounds great. I’d be happy to discuss more.
+                </p>
+                <p class="chat-messages left part1">
+                  Could you send over some pictures of your dog, please?
+                </p>
+                <div class="dog-image">
+                  <img
+                    class="image"
+                    src="./images/dog-image-1.jpg"
+                    alt="picture a dog"
+                  />
+                  <img
+                    class="image"
+                    src="./images/dog-image-2.jpg"
+                    alt="picture a dog"
+                  />
+                  <img
+                    class="image"
+                    src="./images/dog-image-3.jpg"
+                    alt="picture a dog"
+                  />
+                </div>
+                <div class="chat-messages-right">
+                  <p class="chat-messages right-1">
+                    Here are a few pictures. She’s a happy girl!
+                  </p>
+                  <p class="chat-messages right-2">Can you make it?</p>
+                </div>
+                <p class="chat-messages left part2">
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </p>
+                <div class="price-info">
+                  <div class="price">
+                    <div class="radio"></div>
+                    <p class="time-walk">
+                      30 minute walk <span class="price1">$29</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <div class="radio"></div>
+                    <p class="time-walk">
+                      1 hour walk <span class="price2">$49</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- type a message -->
+                <div class="type-a-message">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Type a message…"
+                  />
+                  <a class="icon-type-message" href="#">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="chevron-circle-right"
+                      class="svg-inline--fa fa-chevron-circle-right fa-w-16"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- data -->
+        <div class="data">
+          <h1 class="data-header">Simple booking</h1>
+          <p class="data-content">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
